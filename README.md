@@ -1,16 +1,16 @@
 github: https://github.com/zhengzhuang95/flutter_fluro
 
-### 关于flutter路由，在小项目中，就按照原生写法，但是在大型项目中，这样的我就不会进行推荐，我这里使用的fluro路由管理方案，大型项目中非常nice，现在开始啥也不说了，看我操作就行了
+关于flutter路由，在小项目中，就按照原生写法，但是在大型项目中，这样的我就不会进行推荐，我这里使用的fluro路由管理方案，大型项目中非常nice，现在开始啥也不说了，看我操作就行了
 
-### fluro: ^1.5.1
+#### fluro: ^1.5.1
 
 注：自认为是Flutter最亮，最时髦，最酷的路由器。
 
-#### 在大型项目中，你要问我什么叫大型，我感觉超过20就算了吧，具体什么叫大型，我也不知道，哈哈哈
+在大型项目中，你要问我什么叫大型，我感觉超过20就算了吧，具体什么叫大型，我也不知道，哈哈哈
 
-#### 首先呢，在项目中新建一个routers文件夹，与main.dart同级，这个文件夹就是我们的路由文件夹，建好之后，我们开始进行创建路由
+首先呢，在项目中新建一个routers文件夹，与main.dart同级，这个文件夹就是我们的路由文件夹，建好之后，我们开始进行创建路由
 
-### 1:新建application.dart
+#### 1:新建application.dart
 
 ```
 import 'package:fluro/fluro.dart';
@@ -19,7 +19,7 @@ class Application {
 }
 ```
 
-### 2:新建routes.dart
+#### 2:新建routes.dart
 
 这个页面就配置我们的路由调转链接模块
 
@@ -50,7 +50,7 @@ class Routes {
     }
 }
 ```
-### 3:新建router\_handler.dart
+#### 3:新建router\_handler.dart
 
 handler就是每个路由的规则，编写handler就是配置路由规则，比如我们要传递参数，参数的值是什么，这些都需要在Handler中完成。
 
@@ -91,7 +91,7 @@ Handler loginHanderl = Handler(
 );
 ```
 
-### 4:新建navigator\_util.dart
+#### 4:新建navigator\_util.dart
 
 这个里面主要是进行路由跳转方法的公共书写
 
@@ -184,7 +184,7 @@ class NavigatorUtil {
 }
 ```
 
-### 5:接下来基本上路由模块建立完成
+#### 5:接下来基本上路由模块建立完成
 
 需要到main.dart文件夹进行注册一下
 
@@ -226,7 +226,7 @@ class MyApp extends StatelessWidget {
 
 大功告成，到这里关于flutter采用fluro方式进行的大型项目路由管理就算成功，
 
-### 使用方法：
+#### 使用方法：
 
 ```
 NavigatorUtil.jump(context, '/normalPage');
