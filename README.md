@@ -233,3 +233,9 @@ NavigatorUtil.jump(context, '/normalPage');
 NavigatorUtil.jump(context, '/routingReference?id=200');
 NavigatorUtil.goToLoginRemovePage(context);
 ```
+
+### 注意：中文传参问题
+
+```
+NavigatorUtil.jump(context, '/routingReference?id=${Uri.encodeComponent("中文参数")}');
+```
