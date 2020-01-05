@@ -1,3 +1,5 @@
+## Flutter路由项目实战之fluro
+
 github: https://github.com/zhengzhuang95/flutter_fluro
 
 关于flutter路由，在小项目中，就按照原生写法，但是在大型项目中，这样的我就不会进行推荐，我这里使用的fluro路由管理方案，大型项目中非常nice，现在开始啥也不说了，看我操作就行了
